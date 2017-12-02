@@ -14,7 +14,7 @@ spring:
   profiles: heroku
 eureka:
   instance:
-    hostname: ${APP_NAME:jalgoarena-submissions}.herokuapp.com
+    hostname: ${APP_NAME:jalgo-arena-submissions-pg}.herokuapp.com
     nonSecurePort: 80
 
 logging:
