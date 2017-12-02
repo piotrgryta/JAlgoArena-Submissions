@@ -15,6 +15,7 @@ before_deploy:
 - "./gradlew releaseZip"
 deploy:
   provider: heroku
+  app: jalgo-arena-submissions-pg
   api_key:
     secure: "9855590b-8959-4807-85b7-183375c6a947"
   on:
