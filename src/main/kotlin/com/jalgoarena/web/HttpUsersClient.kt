@@ -19,7 +19,7 @@ class HttpUsersClient(
     private val LOG = LoggerFactory.getLogger(this.javaClass)
 
     private fun authServiceUrl() =
-            discoveryClient.getNextServerFromEureka("jalgoarena-auth", false).homePageUrl
+            discoveryClient.getNextServerFromEureka("jalgo-arena-auth-pg", false).homePageUrl
 
 
     override fun findAllUsers() = handleExceptions(returnOnException = emptyList()) {
