@@ -67,7 +67,7 @@ class HttpUsersClientSpec {
         val instanceInfo = mock(InstanceInfo::class.java)
 
         given(instanceInfo.homePageUrl).willReturn(USERS_SERVICE_DUMMY_URL)
-        given(discoveryClient.getNextServerFromEureka("jalgoarena-auth", false)).willReturn(instanceInfo)
+        given(discoveryClient.getNextServerFromEureka("jalgo-arena-auth-pg", false)).willReturn(instanceInfo)
     }
 
     private val USER = User("mikolaj", "Kraków", "Tyniec Team", USER_ROLE, "0-0")
